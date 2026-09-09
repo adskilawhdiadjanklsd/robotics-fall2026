@@ -1,0 +1,99 @@
+{
+  "checked_evidence_ids": {
+    "mission_1": "db5adb94460bdb25"
+  },
+  "completed_missions": [
+    "mission_1"
+  ],
+  "lab_id": "week01_ros_foundations",
+  "responses": {
+    "mission_1.command_path_explanation": "The guard has to check if the commands in the /student_cmd_vel does not cause any issues then it publishes the command to /cmd_vel.",
+    "mission_1.graph_explanation": "A ROS 2 graph shows how the different components of a robot communicate with each other.  /course_cmd_vel_guard is a node and /student_cmd_vel is a topic.",
+    "mission_1.guided_checks": {
+      "bridge_info": true,
+      "command_topics": true,
+      "guard_info": true,
+      "node_list": true,
+      "scan_info": true,
+      "scan_message": true
+    },
+    "mission_1.scan_observation": "I found angle increment which represents that the LiDAR is moving over some degree of an angle every time to see its surrounding.",
+    "mission_1.tools_explanation": "Gazebo is responsible for sensing while RViz is responsible for helping people see the data.",
+    "mission_2.measurement_explanation": "",
+    "mission_2.motion_comparison": "",
+    "mission_2.prediction_locks": {
+      "straight": "2026-09-09T01:01:41.345061+00:00"
+    },
+    "mission_2.predictions": {
+      "straight": "I predict the robot will move 0.45 meters forward."
+    },
+    "mission_2.safety_explanation": "",
+    "part_1.activity": {
+      "hardware": {
+        "changed": true,
+        "normal": true
+      },
+      "sensor": {
+        "changed": true,
+        "normal": true
+      },
+      "timing": {
+        "changed": true,
+        "normal": true
+      }
+    },
+    "part_2.activity": {
+      "behavior": {
+        "changed": true,
+        "normal": true
+      },
+      "deliberative": {
+        "changed": true,
+        "normal": true
+      },
+      "hybrid": {
+        "changed": true,
+        "normal": true
+      },
+      "reactive": {
+        "changed": true,
+        "normal": true
+      },
+      "safety": {
+        "changed": true,
+        "normal": true
+      }
+    },
+    "part_3.activity": {
+      "communication": {
+        "service": true,
+        "topic": true
+      },
+      "failure": {
+        "healthy": true,
+        "sensor": true,
+        "type": true,
+        "visualization": true
+      },
+      "inspection": {
+        "broken": true,
+        "echo": true,
+        "node_info": true,
+        "nodes": true,
+        "services": true,
+        "topic_info": true,
+        "topics": true
+      },
+      "middleware": {
+        "multiple": true,
+        "single": true
+      }
+    }
+  },
+  "schema_version": 1,
+  "student": {
+    "email": "weixi.huang15@login.cuny.edu",
+    "name": "Wei Xi Huang"
+  },
+  "updated_at": "2026-09-09T01:02:07.150554+00:00"
+}
