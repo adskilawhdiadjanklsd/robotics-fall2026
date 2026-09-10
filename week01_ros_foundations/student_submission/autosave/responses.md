@@ -15,7 +15,7 @@ A ROS 2 graph shows how the different components of a robot communicate with eac
 
 ## mission_1.guided_checks
 
-{'node_list': True, 'guard_info': True, 'bridge_info': True, 'scan_info': True, 'scan_message': True, 'command_topics': True}
+{'bridge_info': True, 'command_topics': True, 'guard_info': True, 'node_list': True, 'scan_info': True, 'scan_message': True}
 
 ## mission_1.scan_observation
 
@@ -35,7 +35,7 @@ Gazebo is responsible for sensing while RViz is responsible for helping people s
 
 ## mission_2.prediction_locks
 
-{'straight': '2026-09-09T01:01:41.345061+00:00'}
+{'straight': '2026-09-10T00:49:51.166200+00:00'}
 
 ## mission_2.predictions
 
