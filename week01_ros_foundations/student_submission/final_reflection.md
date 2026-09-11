@@ -10,9 +10,8 @@ Respond to any or all of these prompts:
 
 ## Response
 
-1. This makes me think that 
-2. This activity makes me motivated to do similar kinds of work because it shows that 
+2. This activity makes me motivated to do similar kinds of work because it shows that put multiple parts together to make a working robot that can sense things and move.
 3. The value I see in connecting technical or computing work with societal considerations is that the robots should not be crashing into things and that it is important to make sure that the robot can be safety put in society.
 4. The thing that stood out to me in this activity is that robots using LiDAR to see what is around them. This stood out to me because I thought that robots used cameras to see. LiDAR seems like a better solution because it is using lasers to sense its surroundings while cameras might not work in dark or foggy or bad weather places.
 
-_Word count: 127_
+_Word count: 136_
