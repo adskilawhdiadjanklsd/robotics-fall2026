@@ -11,7 +11,10 @@ The node is reactive because it only sees what is immediately in front of it and
 
 ## final.course_reflection
 
-
+1. This makes me think that 
+2. This activity makes me motivated to do similar kinds of work because it shows that 
+3. The value I see in connecting technical or computing work with societal considerations is that the robots should not be crashing into things and that it is important to make sure that the robot can be safety put in society.
+4. The thing that stood out to me in this activity is that robots using LiDAR to see what is around them. This stood out to me because I thought that robots used cameras to see. LiDAR seems like a better solution because it is using lasers to sense its surroundings while cameras might not work in dark or foggy or bad weather places.
 
 ## final.hardware_next
 
@@ -19,15 +22,15 @@ I would test the time the function is being processed and the time it takes for 
 
 ## final.middleware_debugging
 
-The ROS graph can let you see the publishers and subscribers of a topic or node. This can help you see if what is being connected or not.
+The ROS graph can let you see the publishers and subscribers of a topic or node. This can help you see what is or is not connected.
 
 ## final.system_synthesis
 
-Robot software is difficult because there are many parts that need to work together and that it has to work in the real world. We need to make sure that the robots are not causing problems and crashing into things. We also need to make sure the is a false safe and determine if the data send speed is also not causing safety issues. This is a reactive architecture because the front_distance function uses LiDAR to see and if there is something is detected in front then it will trigger a stop command. The trade-off of this architecture is that it is not that complicated but it lacks spatial awareness. It can not go around the object blocking it's way and just stops since it only looks at what is in front of it and does not have a map of the surrounding area. The ROS 2 middleware connects the sensing, decision, guard, and actuation nodes. The sensing to the decision by having the LiDAR node to record data then the decision node takes the data and decides the velocity then guard node checks if the values are valid and then sends to the actuation which moves the robot. Timing and invalid data affect safety because if the components take a bit longer to send data over, the other components will have previous data which is not the current data and can cause some calculation errors which can cause the safety issues. The  command guard layer can restrict unsafe motion. It can set the range of velocity that the robot can move at and if the communication between the parts fail  or a component crashes, it can instantly trigger a hard stop so that the robot will never perform any dangerous or unpredictable actions. 
+Robot software is difficult because there are many parts that need to work together and that it has to work in the real world. We need to make sure that the robots are not causing problems and crashing into things when it is in society. We also need to make sure the is a false safe and determine if the response time is also not causing safety issues. The architecture this lab implements is a reactive architecture because the front_distance function uses LiDAR to see and if there is something is detected in front then it will trigger a stop command. The trade-off of this architecture is that it is not that complicated but it lacks spatial awareness. It can not go around the object blocking it's way and just stops since it only looks at what is in front of it and does not have a map of the surrounding area. The ROS 2 middleware connects the sensing, decision, guard, and actuation nodes. The sensing to the decision by having the LiDAR node to record data then the decision node takes the data and decides the velocity then guard node checks if the values are valid and then sends to the actuation which moves the robot. Timing and invalid data affect safety because if the components take a bit longer to send data over, the other components will have previous data which is not the current data and can cause some calculation errors which can cause the safety issues. The  command guard layer can restrict unsafe motion. It can set the range of velocity that the robot can move at and if the communication between the parts fail  or a component crashes, it can instantly trigger a hard stop so that the robot will never perform any dangerous or unpredictable actions. 
 
 ## final.timing_evidence
 
-The one with robot speed and response time.
+The recording timing that most affected my understanding of robot safety was the one with robot speed and response time.
 
 ## mission_1.command_path_explanation
 
