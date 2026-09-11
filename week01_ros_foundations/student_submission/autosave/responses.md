@@ -5,6 +5,30 @@
 - Name: Wei Xi Huang
 - Email: weixi.huang15@login.cuny.edu
 
+## final.architecture_evidence
+
+The node is reactive because it only sees what is immediately in front of it and stops if it senses something in front of it. For it to be a hybrid system it would need to map out some part of the area and know how to move around object blocking it.
+
+## final.course_reflection
+
+
+
+## final.hardware_next
+
+I would test the time the function is being processed and the time it takes for the components to get the data.
+
+## final.middleware_debugging
+
+The ROS graph can let you see the publishers and subscribers of a topic or node. This can help you see if what is being connected or not.
+
+## final.system_synthesis
+
+Robot software is difficult because there are many parts that need to work together and that it has to work in the real world. We need to make sure that the robots are not causing problems and crashing into things. We also need to make sure the is a false safe and determine if the data send speed is also not causing safety issues. This is a reactive architecture because the front_distance function uses LiDAR to see and if there is something is detected in front then it will trigger a stop command. The trade-off of this architecture is that it is not that complicated but it lacks spatial awareness. It can not go around the object blocking it's way and just stops since it only looks at what is in front of it and does not have a map of the surrounding area. The ROS 2 middleware connects the sensing, decision, guard, and actuation nodes. The sensing to the decision by having the LiDAR node to record data then the decision node takes the data and decides the velocity then guard node checks if the values are valid and then sends to the actuation which moves the robot. Timing and invalid data affect safety because if the components take a bit longer to send data over, the other components will have previous data which is not the current data and can cause some calculation errors which can cause the safety issues. The  command guard layer can restrict unsafe motion. It can set the range of velocity that the robot can move at and if the communication between the parts fail  or a component crashes, it can instantly trigger a hard stop so that the robot will never perform any dangerous or unpredictable actions.
+
+## final.timing_evidence
+
+The one with robot speed and response time.
+
 ## mission_1.command_path_explanation
 
 The guard has to check if the commands in the /student_cmd_vel does not cause any issues then it publishes the command to /cmd_vel.
@@ -39,11 +63,11 @@ The rotation simulation result was what I predicted. I predicted 1.5 radians whi
 
 ## mission_2.prediction_locks
 
-{'straight': '2026-09-10T00:49:51.166200+00:00', 'rotation': '2026-09-10T23:11:36.174562+00:00', 'curve': '2026-09-10T23:15:53.252797+00:00', 'curve_modified': '2026-09-10T23:19:46.207871+00:00'}
+{'curve': '2026-09-10T23:15:53.252797+00:00', 'curve_modified': '2026-09-10T23:19:46.207871+00:00', 'rotation': '2026-09-10T23:11:36.174562+00:00', 'straight': '2026-09-10T00:49:51.166200+00:00'}
 
 ## mission_2.predictions
 
-{'straight': 'I predict the robot will move 0.45 meters forward.', 'rotation': 'I predict its position will stay the same while its direction will be facing 1.50 radians left', 'curve': 'I predict an arc or a circle because it is moving  while turning right so it should curve.', 'curve_modified': 'This curve should be turning left and be tighter because of the higher turning speed'}
+{'curve': 'I predict an arc or a circle because it is moving  while turning right so it should curve.', 'curve_modified': 'This curve should be turning left and be tighter because of the higher turning speed', 'rotation': 'I predict its position will stay the same while its direction will be facing 1.50 radians left', 'straight': 'I predict the robot will move 0.45 meters forward.'}
 
 ## mission_2.safety_explanation
 
@@ -59,7 +83,7 @@ The robot stops when there is no valid front measurement because it is safer and
 
 ## mission_3.system_layers
 
-The functions have 
+front_distance function acts records what the LiDAR gives it and uses the information then it gets passed to the guard to check if the values are valid then gives a value. decision_velocity function gets a velocity and then gives a number between 0 and 0.18. All this information goes o the ROS node and the command guard needs to check if the everything is good like if it is receiving the communication and nothing crashes.
 
 ## part_1.activity
 
