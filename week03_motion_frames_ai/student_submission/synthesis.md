@@ -1,0 +1,3 @@
+# Technical synthesis
+
+The robot for mission 3 makes a rounded rectangle but from what I can see from the simulation, the robot does not stop exactly at where it began. This is because of the offset from the actual calculated angle change and forward movement from the odometry estimate. The robot would also need to know how to move based on where the sensors are at. The sensors being attached to the robot or a camera in a fixed position would also affect the calculation of the robot's position. If the robot thinks it is at some position when in reality it is at a different position, it could cause the robot to crash or bump into things.

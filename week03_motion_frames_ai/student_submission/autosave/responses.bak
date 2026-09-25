@@ -1,11 +1,13 @@
 {
   "checked_evidence_ids": {
     "mission_1": "df854b44180466bd",
-    "mission_2": "3f5e51a2b90e1c30"
+    "mission_2": "3f5e51a2b90e1c30",
+    "mission_3": "00edbf7f87c316e5"
   },
   "completed_missions": [
     "mission_1",
-    "mission_2"
+    "mission_2",
+    "mission_3"
   ],
   "content_version": 2,
   "lab_id": "week03_motion_frames_ai",
@@ -103,6 +105,8 @@
       "schema_version": 2,
       "scope": "live"
     },
+    "final.course_reflection": "What stood out to me in the activity is using AI to write code. Giving the AI a lot of details of what you want it to do makes it a lot better than giving a general idea. It also makes it so that you don't need to fix a lot of things or ask the AI to fix it. Even if we gave it a lot of details and it has no errors and does not need any fixes, we should still check just in case.",
+    "final.synthesis": "The robot for mission 3 makes a rounded rectangle but from what I can see from the simulation, the robot does not stop exactly at where it began. This is because of the offset from the actual calculated angle change and forward movement from the odometry estimate. The robot would also need to know how to move based on where the sensors are at. The sensors being attached to the robot or a camera in a fixed position would also affect the calculation of the robot's position. If the robot thinks it is at some position when in reality it is at a different position, it could cause the robot to crash or bump into things.",
     "mission_1.attempts": [
       {
         "captured_at": "2026-09-21T21:31:49.807706+00:00",
@@ -7142,7 +7146,7 @@
     "mission_3.assigned_pattern": "rounded_rectangle",
     "mission_3.assumptions": "It sets the speeds to a value within the range and calculates the the time it should take to do the long leg, short leg, and the arcs. It also assumes that positive x is moving forward and positive radians is turning left. ",
     "mission_3.evidence_analysis": "test_my_pattern_geometry tests the first segment then checks if the segments are alternating from long length to short length so that it is making a rectangle and it also checks if the angle is 90 degrees when it has to make the round edges. \ntest_my_pattern_order tests if the pattern order is correct. It should alternate from a straight line to an arc. Straight line has no angle and positive velocity. Arc has both positive angle and positive velocity.",
-    "mission_3.live_issue": "Stop decision and live motion and stop is not verified.",
+    "mission_3.live_issue": "Stop decision and live motion and stop is not verified at first. I talked to the professor about this issue and he fixed it and now it is just live motion and stop that is still not verified.",
     "mission_3.live_pending": true,
     "mission_3.modifications": "The generated code seems to be fine. It chose velocities that are within the limit and calculated the time it should take and in total is within the time limit.",
     "mission_3.original_output": "AssumptionsSegment Class Structure: The existing Segment dataclass or class accepts linear_x (m/s), angular_z (rad/s), and duration (s) as its initialization parameters.Arc Kinematics: To execute a left 90-degree ($\\pi/2 \\text{ rad}$) turn with a radius ($R = 0.15 \\text{ m}$) while respecting the maximum angular speed constraint ($\\omega \\le 0.80 \\text{ rad/s}$), we set $\\omega = 0.80 \\text{ rad/s}$. The required linear speed for the arc is calculated as $v = \\omega \\times R = 0.80 \\times 0.15 = 0.12 \\text{ m/s}$ (well under the $0.22 \\text{ m/s}$ limit). The duration is derived as $t = \\frac{\\theta}{\\omega} = \\frac{\\pi / 2}{0.80} \\approx 1.9635 \\text{ seconds}$.Straight Leg Kinematics: For the straight segments ($0.40 \\text{ m}$ and $0.25 \\text{ m}$), we use a linear speed of $v = 0.20 \\text{ m/s}$ with $\\omega = 0.0 \\text{ rad/s}$, yielding durations of $2.0 \\text{ seconds}$ and $1.25 \\text{ seconds}$ respectively.Total Duration & Limits: The sum of all segment durations is approximately $13.85 \\text{ seconds}$, satisfying the strict limit of $\\le 60 \\text{ seconds}$ total and $\\le 30 \\text{ seconds}$ per segment.Implementation (pattern.py)Here is the implementation of the build_pattern function for rounded_rectangle:Pythonimport math\n\ndef build_pattern(pattern_name: str) -> list:\n    \"\"\"\n    Constructs and returns the sequence of segments for the requested pattern name.\n    \"\"\"\n    if pattern_name != 'rounded_rectangle':\n        raise ValueError(f\"Unknown pattern name: '{pattern_name}'. Expected 'rounded_rectangle'.\")\n\n    # Kinematic limits & parameters\n    straight_v = 0.20  # m/s (<= 0.22 limit)\n    arc_w = 0.80       # rad/s (<= 0.80 limit)\n    arc_radius = 0.15  # m\n    arc_v = arc_w * arc_radius  # 0.12 m/s\n    \n    # 90 degrees = pi / 2 radians\n    arc_angle = math.pi / 2.0\n    arc_duration = arc_angle / arc_w  # ~1.9635 s\n\n    dur_040 = 0.40 / straight_v  # 2.00 s\n    dur_025 = 0.25 / straight_v  # 1.25 s\n\n    # 8 alternating segments: 4 straight legs and 4 left arcs\n    segments = [\n        Segment(linear_x=straight_v, angular_z=0.0, duration=dur_040),  # 1. Forward 0.40m\n        Segment(linear_x=arc_v, angular_z=arc_w, duration=arc_duration),      # 2. Left arc 90\u00b0\n        Segment(linear_x=straight_v, angular_z=0.0, duration=dur_025),  # 3. Forward 0.25m\n        Segment(linear_x=arc_v, angular_z=arc_w, duration=arc_duration),      # 4. Left arc 90\u00b0\n        Segment(linear_x=straight_v, angular_z=0.0, duration=dur_040),  # 5. Forward 0.40m\n        Segment(linear_x=arc_v, angular_z=arc_w, duration=arc_duration),      # 6. Left arc 90\u00b0\n        Segment(linear_x=straight_v, angular_z=0.0, duration=dur_025),  # 7. Forward 0.25m\n        Segment(linear_x=arc_v, angular_z=arc_w, duration=arc_duration),      # 8. Left arc 90\u00b0\n    ]\n    \n    return segments\nProposed TestsTo ensure robust operation and compliance with all course constraints, the following unit tests should be added to your test suite:test_rounded_rectangle_segment_count: Asserts that build_pattern('rounded_rectangle') returns exactly 8 segments.test_kinematic_constraints: Iterates through all generated segments and asserts that:$\\vert{}linear\\_x\\vert{} \\le 0.22$$\\vert{}angular\\_z\\vert{} \\le 0.80$$0 < duration \\le 30.0$Total duration of all combined segments $\\le 60.0$ seconds.test_unknown_pattern_raises_value_error: Asserts that passing an invalid pattern name (e.g., 'square') correctly raises a ValueError.",
@@ -7178,20 +7182,21 @@
     ]
   },
   "schema_version": 1,
-  "stage": "mission_3",
+  "stage": "final",
   "student": {
     "course_id": "weixi.huang15@login.cuny.edu",
     "email": "weixi.huang15@login.cuny.edu",
     "name": "Wei Xi Huang"
   },
-  "updated_at": "2026-09-24T02:49:04.687339+00:00",
+  "updated_at": "2026-09-25T23:51:11.444181+00:00",
   "visited_stages": [
     "intro",
     "concepts",
     "preflight",
     "mission_1",
     "mission_2",
-    "mission_3"
+    "mission_3",
+    "final"
   ],
   "walkthrough_index": 4
 }
