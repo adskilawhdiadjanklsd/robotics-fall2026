@@ -14,6 +14,10 @@ For car brakes, if it is tuned too aggressively, the car make people inside the 
 
 It turns left because dR - dL is 6 - 0 which makes the angle change positive and positive is left.
 
+### m3_prediction
+
+Increasing forward speed may cause the robot to crash into objects if there is not enough breaks. Too little derivative control might make the robot over shoot the target. Therefore the robot crash into objects
+
 ## Mission explanations
 
 _(none yet)_
