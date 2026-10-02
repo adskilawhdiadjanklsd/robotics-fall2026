@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "submission.json",
-      "size_bytes": 25374,
-      "crc32": "b5d815d9"
+      "size_bytes": 24806,
+      "crc32": "6e764c85"
     },
     {
       "path": "drawn_route.csv",
@@ -14,18 +14,18 @@
     },
     {
       "path": "waypoint_nav_run.csv",
-      "size_bytes": 20857,
-      "crc32": "7d8c2ad7"
+      "size_bytes": 20422,
+      "crc32": "59df8766"
     },
     {
       "path": "activity_gifs/latest_drive.gif",
-      "size_bytes": 617235,
-      "crc32": "19955612"
+      "size_bytes": 615259,
+      "crc32": "f1f8a3eb"
     },
     {
       "path": "explanation.md",
-      "size_bytes": 1581,
-      "crc32": "7ba942ac"
+      "size_bytes": 1455,
+      "crc32": "c670d05a"
     }
   ]
 }
