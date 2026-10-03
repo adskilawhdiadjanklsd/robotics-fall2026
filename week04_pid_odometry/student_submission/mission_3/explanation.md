@@ -1,13 +1,13 @@
 # mission_3 Submission
 
-- Name: (not provided)
+- Name: Wei Xi Huang
 - Section: (not provided)
 
 ## Explanations
 
 ### technical_analysis
 
-I predicted that increasing the forward speed would cause it to crash into a pedestrian but that is not true. If everything else is tuned then it should not crash. I predicted that too low Kd would overshoot the target however it seems to be the opposite. For the line from WP3 to WP4, too little Kd would make it be under the line and too much Kd would make it sometimes be over the line. Too little Kp made the robot very slow when trying to turn and higher Kp made it faster after turning. Too little Ki made the straight lines very curvy and would crash into a pedestrian. More Ki removed most of the curve. Inaccurate wheel radius can make a well-tuned controller follow the wrong path because it makes it turn too much. Too little wheel radius makes it move more left and too much makes it move more right.\
+I predicted that increasing the forward speed would cause it to crash into a pedestrian but that is not true. If everything else is tuned then it should not crash. I predicted that too low Kd would overshoot the target however it seems to be the opposite. For the line from WP3 to WP4, too little Kd would make it be under the line and too much Kd would make it sometimes be over the line. Too little Kp made the robot very slow when trying to turn and higher Kp made it faster after turning. Too little Ki made the straight lines very curvy and would crash into a pedestrian. More Ki removed most of the curve. Inaccurate wheel radius can make a well-tuned controller follow the wrong path because it makes it turn too much. Too little wheel radius makes it move more left and too much makes it move more right.
 
 ### human_centered_analysis
 
