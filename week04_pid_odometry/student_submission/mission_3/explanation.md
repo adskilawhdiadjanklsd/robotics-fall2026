@@ -1,6 +1,6 @@
 # mission_3 Submission
 
-- Name: Wei Xi Huang
+- Name: (not provided)
 - Section: (not provided)
 
 ## Explanations

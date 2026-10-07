@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "saved_at": "2026-10-07T00:53:47",
+  "saved_at": "2026-10-07T00:48:24",
   "identity": {
     "name": "Wei Xi Huang",
     "student_id": "24545015",
@@ -9,7 +9,7 @@
   "checkins": {
     "background_social": "For car brakes, too aggressive means that the car would feel very jerky and make the passengers very dizzy. Too cautiously means that the car might not stop in time and hit someone on the streets.",
     "odom_background_wheels": "It turns left because dR- dL = 6 - 0 so the angle is positive so it is turning left.",
-    "final_reflection": "What stood out in this activity is tuning the robot. I was surprised how much the angle estimate changed the route of the robot. We need to test the robot before using it in the real world because we might expect the robot to move a certain way but it might not meet your expectations. This motivates me to do similar kinds of work in the future because I would need to keep testing my program to make sure it does what I want it to do.",
+    "final_reflection": "a",
     "m1_prediction": "I predict that the arm would move more slowly towards the target with too little Kp and the arm to over shoot with too little Kd.",
     "m1_arm_tuning": "My prediction was correct. I changed the Kp to be higher and it was faster to move to the target compared to when I put the Kp to be lower. When I changed the Kd to be lower, the arm was swinging more before reaching the target. There was no swinging when I put the Kd to be higher. The gravity compensation made it so that higher Kd made more of a difference. It stopped faster at the target with higher Kd.",
     "m2_prediction": "The robot will move forward more than moving sideways.",

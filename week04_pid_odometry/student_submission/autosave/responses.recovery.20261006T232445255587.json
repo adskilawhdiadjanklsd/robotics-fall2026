@@ -1,24 +1,23 @@
 {
   "schema_version": 2,
-  "saved_at": "2026-10-07T00:53:47",
+  "saved_at": "2026-10-06T23:22:56",
   "identity": {
     "name": "Wei Xi Huang",
     "student_id": "24545015",
     "section": ""
   },
   "checkins": {
-    "background_social": "For car brakes, too aggressive means that the car would feel very jerky and make the passengers very dizzy. Too cautiously means that the car might not stop in time and hit someone on the streets.",
-    "odom_background_wheels": "It turns left because dR- dL = 6 - 0 so the angle is positive so it is turning left.",
-    "final_reflection": "What stood out in this activity is tuning the robot. I was surprised how much the angle estimate changed the route of the robot. We need to test the robot before using it in the real world because we might expect the robot to move a certain way but it might not meet your expectations. This motivates me to do similar kinds of work in the future because I would need to keep testing my program to make sure it does what I want it to do.",
+    "background_social": "For car brakes, if it is tuned too aggressively, the car make people inside the car shake back and forth when ever it breaks and makes people dizzy. If it is tuned too cautiously, the car might not stop in time and might hit someone on the streets.",
+    "odom_background_wheels": "It turns left because dR - dL is 6 - 0 which makes the angle change positive and positive is left.",
+    "final_reflection": "a",
     "m1_prediction": "I predict that the arm would move more slowly towards the target with too little Kp and the arm to over shoot with too little Kd.",
     "m1_arm_tuning": "My prediction was correct. I changed the Kp to be higher and it was faster to move to the target compared to when I put the Kp to be lower. When I changed the Kd to be lower, the arm was swinging more before reaching the target. There was no swinging when I put the Kd to be higher. The gravity compensation made it so that higher Kd made more of a difference. It stopped faster at the target with higher Kd.",
     "m2_prediction": "The robot will move forward more than moving sideways.",
     "m2_analysis": "I predicted that the robot would move forward more and sideways less. It seems to be correct. The forward pod scale changed how much the robot moves forward. Too much of it makes it over shoot the target and too little makes it under shoot. The sideways pod is necessary because it makes the robot move sideways without turning. Drift can remain after calibration because something could happen so that the the odometry count ticks wrong like wheel slip.",
-    "m3_prediction": "Increasing forward speed may cause the robot to crash into objects if there is not enough breaks. Too little derivative control might make the robot over shoot the target. Therefore the robot crash into objects",
+    "m3_prediction": "I predict that increasing the forward speed would cause it to crash into a pedestrian. I predicted that too low Kd would make it overshoot the target.",
     "m3_technical": "I predicted that increasing the forward speed would cause it to crash into a pedestrian but that is not true. If everything else is tuned then it should not crash. I predicted that too low Kd would overshoot the target however it seems to be the opposite. For the line from WP3 to WP4, too little Kd would make it be under the line and too much Kd would make it sometimes be over the line. Too little Kp made the robot very slow when trying to turn and higher Kp made it faster after turning. Too little Ki made the straight lines very curvy and would crash into a pedestrian. More Ki removed most of the curve. Inaccurate wheel radius can make a well-tuned controller follow the wrong path because it makes it turn too much. Too little wheel radius makes it move more left and too much makes it move more right.",
     "m3_human": "The consequential failure for a pedestrian is when the robot is moving very fast and crashes into them. If it is slower and crashes it would have less of an issue. If you want the robot to be cautious, it would move very slow and may freeze in place because it does not want to do anything too risky and can cause blockage. If you want the robot to be fast, it would do riskier things and can cause more issues. It is up to the engineer to decide how fast the robot can be without causing issues.",
-    "background_compare": "The engineer chooses the gains Kp, Ki, and Kd, which determine how the controller reacts to its position and how far the target is.",
-    "pid_playground_terms": "The P term reacted first because it is calculating the current distance from the target distance. The I term eliminated the final gap."
+    "background_compare": ""
   },
   "explanations": {
     "mission_1": {

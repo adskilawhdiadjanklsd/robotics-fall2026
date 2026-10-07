@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "created_at": "2026-10-01T11:05:27",
+  "created_at": "2026-10-06T23:20:24",
   "mission_id": "mission_2",
   "student": {
     "name": "",
@@ -12,24 +12,26 @@
     "calibration_analysis": "I predicted that the robot would move forward more and sideways less. It seems to be correct. The forward pod scale changed how much the robot moves forward. Too much of it makes it over shoot the target and too little makes it under shoot. The sideways pod is necessary because it makes the robot move sideways without turning. Drift can remain after calibration because something could happen so that the the odometry count ticks wrong like wheel slip."
   },
   "params": {
-    "forwardInPerTick": 0.0508,
-    "strafeInPerTick": 0.0505
+    "forwardInPerTick": 0.0499,
+    "strafeInPerTick": 0.0499
   },
   "metrics": {
-    "max_error_in": 1.1825576187231301,
-    "final_error_in": 0.7052054407050622,
+    "max_error_in": 0.17500189827539156,
+    "final_error_in": 0.12862947718156614,
     "passed": true
   },
   "result": {
     "passed": true,
-    "maxError": 1.1825576187231301,
-    "finalError": 0.7052054407050622,
+    "maxError": 0.17500189827539156,
+    "finalError": 0.12862947718156614,
     "params": {
-      "forwardInPerTick": 0.0508,
-      "strafeInPerTick": 0.0505
+      "forwardInPerTick": 0.0499,
+      "strafeInPerTick": 0.0499
     }
   },
-  "csv_files": {},
+  "csv_files": {
+    "odometry_test_summary.csv": "max_error_in,final_error_in,forward_in_per_tick,strafe_in_per_tick,passed_server_check\r\n0.17500189827539156,0.12862947718156614,0.0499,0.0499,True\r\n"
+  },
   "activity_gifs": [
     "latest_odometry_test.gif"
   ]
