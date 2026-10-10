@@ -1,0 +1,35 @@
+{
+  "files": {
+    "autosave/responses.json": "59fe6d07e8d6d77dce01109dafbf146cc251c068a79bbf80540e3f7a257ef680",
+    "autosave/responses.md": "f7d0a1f051d488459e2659fafd0806fec2506b551bef591475013e90ed4c1341",
+    "autosave/responses.recovery.33e5960c6e9b4e76815052fdc9eda74c.json": "0251a12edc78fc3446cc0d6baabe2e04f9a65af860905e09430df1d335564fa4",
+    "final_reflection.md": "c13504f2247ef1d24295e42c05fca70f01ea3c642078ff3e6da179b7ceeedd5c",
+    "final_synthesis.md": "4584bca53176ef1aefa7e3acd72fa27257e5f0e4b502390b8b825295ca8ae55c",
+    "mission_1/evidence.png": "da326e99129fcdc96a8c126ddccf2750f838f96b3775147e95f0d3e946a0cf1a",
+    "mission_1/explanation.md": "1609a9f66875bf2b51b0a817a9bfc461d4dec5ce0ace52ed6f1a739dd2c010e1",
+    "mission_1/measurements.csv": "db8387209bc932827452c53e12eea865e26146ee50004538cb07ad2b3e098549",
+    "mission_1/submission.json": "9af32458e7c670da85a4b8faccbc1aab983b3565589b4224d54f3580c3329aae",
+    "mission_2/evidence.png": "fae9471f87f8bc397941daa776cd482d288cc1796f9b14a1d817ee70d56f2abe",
+    "mission_2/explanation.md": "4e99f09b47e5e9573663fe9f6549dd61779528c5fdc249b502cbeb039c828fc4",
+    "mission_2/measurements.csv": "dcfbdd24fd987da588e0b6d9516817eb1873f5950179e95d2a2baf9c1d66502a",
+    "mission_2/submission.json": "28ec8c8d8eda5d859531f579fccef50d62afb9ae1ac64ea7e9443e0194e6d363",
+    "mission_3/explanation.md": "12678ff0286a6fc13f99072688dd42615b671575ee9ff0ce4dce229096d4a555",
+    "mission_3/measurements.csv": "42abb13160b1a3c41e4afd5ce5bb0110d99adc265b29c7f06ed12b161363d7c0",
+    "mission_3/submission.json": "5ddaaa7f60a634d74a3e86fe1836035d213152159d277f31c1d42fd1f47c217f",
+    "student.json": "79242e606233ec9440ac136df1b04af98f18ea953ee257330d13e06e8f9ff840"
+  },
+  "generated_at": "2026-10-10T04:33:45.699748+00:00",
+  "lab_id": "week05_sensors_uncertainty",
+  "mission_signatures": {
+    "mission_1": "998d38ebb6937cbb",
+    "mission_2": "a0cdaee21e15e4bd",
+    "mission_3": "ca28ab047814f1a6"
+  },
+  "response_signature": "f7ca4fedccb88b15",
+  "schema_version": 2,
+  "student": {
+    "course_id": "24545015",
+    "email": "weixi.huang15@login.cuny.edu",
+    "name": "Wei Xi Huang"
+  }
+}
