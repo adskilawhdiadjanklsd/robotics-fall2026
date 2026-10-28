@@ -3,6 +3,14 @@
 - email: weixi.huang15@login.cuny.edu
 - name: Wei Xi Huang
 
+## final.course_reflection
+
+It was interesting that the mapping accuracy was not what I expected. The quality rating for the first map was 84.8 while the second map was 82.3. I expected the second map to be more accurate because had a longer route and visited every area of the house but the first map was more accurate. It is important for robots to know correctly where it is and where and what is in the area so that it doesn't crash into and break things.
+
+## final.synthesis
+
+For the first house, the robot knows most of the outline of the house and some of the objects in the room and the legs of the table. One corner of the map, some corners of a room, and under the tables are unknown  because the robot did not go far enough for the lidar to pick it up. For the second map, the robot had a longer route that covers more area and took more time moving around the house so it knows more about the objects of the house and has the outline of the entire house. However, the biggest issue of this map was that two of the left side table's legs are inside another room. A possible map correction is for the robot to revisit all the rooms and do the reverse of the route so it can correct it. I would trust the first map more because it has a quality rating of 84.8 and it has more accurate object placement but if the second map fixes the table placement then I would choose the second map because it covers more of the area with covering 91.36 m^2 compared to the first map which covers 85.7 m^2.
+
 ## mission_1.drift_and_revisit
 
 The walls near the entrance is shifted and some are doubled. The left side of the entrance seems like there is 2 walls and there are some LiDAR that detected it is a free space. The right side of the entrance it already saw that it is free space but there is an extra wall that blocks the free space.

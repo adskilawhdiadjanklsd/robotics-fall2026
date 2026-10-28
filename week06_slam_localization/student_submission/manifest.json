@@ -1,0 +1,35 @@
+{
+  "files": {
+    "autosave/responses.json": "f39876e96b6a1ece5f104cd981936889da87467f343ee63a809cf1d2edd5b50c",
+    "autosave/responses.md": "bcfbcc373f706710448389eb8e6d113739b07e4b81822951032d6a7e7f1c90fb",
+    "final_reflection.md": "2d73b172384e922b5169ce551a128a650efc481464b6a12cc995d9e9b0bcd99f",
+    "final_synthesis.md": "fcac84693ca2f5ea5ae309dd671ed9c8ba7e9a058210b6342434d2f5cb87e264",
+    "mission_1/analysis.json": "1ba082cccc83880a777386ff41916645b5ac20b7d7f2ede9cd298bf5c70aca3b",
+    "mission_1/evidence.json": "aaafa113568f25b8e5337bf926c14e8fdd731f8b20ea943ee993f28ebe08acad",
+    "mission_1/explanation.md": "995e3b5a91766f062375537234ec42d7f4fb306279b4fd60e5abe82c7bf32b59",
+    "mission_1/map.pgm": "1f7a3d578f157a0f9d3ac14aa90c7f115568e87505d85706ca6d7fdf8c2c4587",
+    "mission_1/map.yaml": "6c29bf53e5a9d28029042168e668488932863cb3d3af6e09d20b942c4b283684",
+    "mission_1/rviz_screenshot.png": "2895c399ca1da58ee738dec72366400b26e537dbebe8fa1fd3d389f200f4d825",
+    "mission_1/submission.json": "da6c78672453cfe89b72961976c50ce4124c45fd9481b8d86dbdbe5992cf981a",
+    "mission_2/analysis.json": "802edef9898114c72912b1e664161fd2f8dfb10070870ed536ce9fb1e2603ce2",
+    "mission_2/evidence.json": "1d63936ab9d70cda4a98b408486e162f03f059055a4c4c398a079f6b628158bc",
+    "mission_2/explanation.md": "3f0e6deeb8f8f5cd80b999e2a097150bb601ddc5f1c525e62bfdeb4d0ca745eb",
+    "mission_2/map.pgm": "9f6f0ceb8a50984ed08407f181eb1206f19331405ccbc193b2da005cdf97c7db",
+    "mission_2/map.yaml": "86cd47a38a0ed4adde4bfb510160ebbb05e1f57427df28081839cb470eec171d",
+    "mission_2/rviz_screenshot.png": "645c1b56420642289e72fd14d15132ec6ac57b13be6bbfd02d62e52ce6baa463",
+    "mission_2/submission.json": "f3c419e1b4c0049cf544748d6253bfac62794b87125fcf78b1cd0a73ec0cde8d",
+    "student.json": "db2e794cd0d39e9beecbd3368073363deeebaa947c4b360f6737f5b3bacc7ce2"
+  },
+  "generated_at": "2026-10-28T03:52:01.791745+00:00",
+  "lab_id": "week06_slam_localization",
+  "mission_signatures": {
+    "mission_1": "862a4c0b5b93e563",
+    "mission_2": "c284460a58b009d8"
+  },
+  "response_signature": "14ce9954c5d6fe9b",
+  "schema_version": 2,
+  "student": {
+    "email": "weixi.huang15@login.cuny.edu",
+    "name": "Wei Xi Huang"
+  }
+}
