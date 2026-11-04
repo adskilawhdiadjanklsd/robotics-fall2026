@@ -1,0 +1,1 @@
+It is important to make robots to be able to detect correctly so that it would not cause many errors and not detect things it is supposed to. Something interesting is the trade off of classical and learned detection.
