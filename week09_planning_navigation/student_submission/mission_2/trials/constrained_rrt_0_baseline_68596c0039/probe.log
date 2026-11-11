@@ -1,0 +1,18 @@
+[INFO] [1794420053.510156452] [lab8_experiment_probe]: Waiting for Nav2 planning and path-following actions
+[INFO] [1794420061.063902574] [lab8_experiment_probe]: Waiting for map-frame robot position and lidar
+[INFO] [1794420064.357096716] [lab8_experiment_probe]: Waiting for planner_server lifecycle activation
+[INFO] [1794420065.408909621] [lab8_experiment_probe]: Waiting for controller_server lifecycle activation
+[INFO] [1794420065.451813125] [lab8_experiment_probe]: Waiting for velocity_smoother lifecycle activation
+[INFO] [1794420065.997196281] [lab8_experiment_probe]: Waiting for collision_monitor lifecycle activation
+[INFO] [1794420066.039563854] [lab8_experiment_probe]: Nav2 ready. Preparing the requested path
+[INFO] [1794420066.119122112] [lab8_experiment_probe]: Following path: 0 simulated seconds, estimated goal distance 9.65 m
+[INFO] [1794420071.164586388] [lab8_experiment_probe]: Following path: 5 simulated seconds, estimated goal distance 8.48 m
+[INFO] [1794420076.208309201] [lab8_experiment_probe]: Following path: 10 simulated seconds, estimated goal distance 8.38 m
+[INFO] [1794420081.260575943] [lab8_experiment_probe]: Following path: 15 simulated seconds, estimated goal distance 8.48 m
+[INFO] [1794420086.313098693] [lab8_experiment_probe]: Following path: 20 simulated seconds, estimated goal distance 8.01 m
+[INFO] [1794420091.362014254] [lab8_experiment_probe]: Following path: 25 simulated seconds, estimated goal distance 7.26 m
+[INFO] [1794420096.405442638] [lab8_experiment_probe]: Following path: 30 simulated seconds, estimated goal distance 5.90 m
+[INFO] [1794420101.451625709] [lab8_experiment_probe]: Following path: 35 simulated seconds, estimated goal distance 4.43 m
+[INFO] [1794420106.493513503] [lab8_experiment_probe]: Following path: 40 simulated seconds, estimated goal distance 3.28 m
+[INFO] [1794420111.342988679] [lab8_experiment_probe]: Finishing trial: controller_failed
+{"status": "controller_failed", "output": "/workspace/week09_planning_navigation/runtime/trials/constrained_rrt_0_baseline_68596c0039/result.json"}

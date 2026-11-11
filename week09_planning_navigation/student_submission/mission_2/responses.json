@@ -1,0 +1,5 @@
+{
+  "mission_2.prediction": "A* will finish sooner compared to DFS because A* goes on in the direction closes to heading to the goal so it will not make unnecessary routes while DFS will find a route but the route might not be optimized.",
+  "mission_2.performance": "A* has  success status distance_m of 23.799087360191233\tand elapsed_s of 88.96600000000001.DFS has status of controller_failed distance_m of 31.53589499690114 and elapsed_s of 145.08599999999998. The results supported my prediction. The plot showed that DFS was doing zigzags when it could have just went down like in A*. I was surprised that DFS did not complete the route and stopped in the middle of its route. ",
+  "mission_2.choice": "I would choose nav2 for a delivery plan. The status is succeeded for both maps. Constrained elapsed_s is 74.454 which is the quickest, open elapsed_s is 35.5 which is also the quickest. Chose it over RRT because it controller failed on the constrained map. The advantages that mapper most for my choice is that it should be fastest route and doesn't have errors."
+}

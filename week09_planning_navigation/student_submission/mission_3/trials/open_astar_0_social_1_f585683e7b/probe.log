@@ -1,0 +1,20 @@
+[INFO] [1794424093.133136861] [lab8_experiment_probe]: Waiting for Nav2 planning and path-following actions
+[INFO] [1794424102.465461657] [lab8_experiment_probe]: Waiting for map-frame robot position and lidar
+[INFO] [1794424104.830325452] [lab8_experiment_probe]: Waiting for planner_server lifecycle activation
+[INFO] [1794424105.948394953] [lab8_experiment_probe]: Waiting for controller_server lifecycle activation
+[INFO] [1794424105.995291836] [lab8_experiment_probe]: Waiting for velocity_smoother lifecycle activation
+[INFO] [1794424106.548800176] [lab8_experiment_probe]: Waiting for collision_monitor lifecycle activation
+[INFO] [1794424106.597291420] [lab8_experiment_probe]: Nav2 ready. Preparing the requested path
+[INFO] [1794424106.675721901] [lab8_experiment_probe]: Computing the human-aware potential-field path
+[INFO] [1794424106.733802809] [lab8_experiment_probe]: Following path: 0 simulated seconds, estimated goal distance 9.65 m
+[INFO] [1794424111.778021414] [lab8_experiment_probe]: Following path: 5 simulated seconds, estimated goal distance 8.57 m
+[INFO] [1794424116.819617744] [lab8_experiment_probe]: Following path: 10 simulated seconds, estimated goal distance 7.61 m
+[INFO] [1794424121.866916361] [lab8_experiment_probe]: Following path: 15 simulated seconds, estimated goal distance 6.70 m
+[INFO] [1794424126.913459397] [lab8_experiment_probe]: Following path: 20 simulated seconds, estimated goal distance 6.10 m
+[INFO] [1794424131.964392672] [lab8_experiment_probe]: Following path: 25 simulated seconds, estimated goal distance 5.75 m
+[INFO] [1794424137.008258229] [lab8_experiment_probe]: Following path: 30 simulated seconds, estimated goal distance 5.12 m
+[INFO] [1794424142.049749350] [lab8_experiment_probe]: Following path: 35 simulated seconds, estimated goal distance 3.65 m
+[INFO] [1794424147.095992062] [lab8_experiment_probe]: Following path: 40 simulated seconds, estimated goal distance 2.16 m
+[INFO] [1794424152.142989723] [lab8_experiment_probe]: Following path: 45 simulated seconds, estimated goal distance 0.60 m
+[INFO] [1794424154.149488610] [lab8_experiment_probe]: Finishing trial: succeeded
+{"status": "succeeded", "output": "/workspace/week09_planning_navigation/runtime/trials/open_astar_0_social_1_f585683e7b/result.json"}

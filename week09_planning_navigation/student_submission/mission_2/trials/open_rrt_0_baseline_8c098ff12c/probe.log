@@ -1,0 +1,19 @@
+[INFO] [1794419201.694193131] [lab8_experiment_probe]: Waiting for Nav2 planning and path-following actions
+[INFO] [1794419211.255728824] [lab8_experiment_probe]: Waiting for map-frame robot position and lidar
+[INFO] [1794419213.069294166] [lab8_experiment_probe]: Waiting for planner_server lifecycle activation
+[INFO] [1794419213.994178742] [lab8_experiment_probe]: Waiting for controller_server lifecycle activation
+[INFO] [1794419214.048902079] [lab8_experiment_probe]: Waiting for velocity_smoother lifecycle activation
+[INFO] [1794419214.596734569] [lab8_experiment_probe]: Waiting for collision_monitor lifecycle activation
+[INFO] [1794419214.650933182] [lab8_experiment_probe]: Nav2 ready. Preparing the requested path
+[INFO] [1794419214.738390575] [lab8_experiment_probe]: Following path: 0 simulated seconds, estimated goal distance 9.65 m
+[INFO] [1794419219.779680574] [lab8_experiment_probe]: Following path: 5 simulated seconds, estimated goal distance 8.39 m
+[INFO] [1794419224.819370393] [lab8_experiment_probe]: Following path: 10 simulated seconds, estimated goal distance 6.95 m
+[INFO] [1794419229.865773384] [lab8_experiment_probe]: Following path: 15 simulated seconds, estimated goal distance 6.02 m
+[INFO] [1794419234.906364690] [lab8_experiment_probe]: Following path: 20 simulated seconds, estimated goal distance 5.71 m
+[INFO] [1794419239.953171204] [lab8_experiment_probe]: Following path: 25 simulated seconds, estimated goal distance 4.46 m
+[INFO] [1794419244.992767199] [lab8_experiment_probe]: Following path: 30 simulated seconds, estimated goal distance 4.02 m
+[INFO] [1794419250.038794750] [lab8_experiment_probe]: Following path: 35 simulated seconds, estimated goal distance 3.55 m
+[INFO] [1794419255.084648191] [lab8_experiment_probe]: Following path: 40 simulated seconds, estimated goal distance 2.28 m
+[INFO] [1794419260.130057808] [lab8_experiment_probe]: Following path: 45 simulated seconds, estimated goal distance 0.79 m
+[INFO] [1794419262.995505347] [lab8_experiment_probe]: Finishing trial: succeeded
+{"status": "succeeded", "output": "/workspace/week09_planning_navigation/runtime/trials/open_rrt_0_baseline_8c098ff12c/result.json"}
